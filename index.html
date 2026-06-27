@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Noir — Fragrâncias Especiais</title>
+    <meta name="description" content="Casa Noir - Fragrâncias que transformam ambientes. Elegância percebida em cada detalhe.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav" aria-label="Navegação principal">
+            <a href="#" class="logo" aria-label="Casa Noir - Página inicial">
+                <span class="logo-text">Casa Noir</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#marca" role="menuitem">A Marca</a></li>
+                <li role="none"><a href="#produtos" role="menuitem">Produtos</a></li>
+                <li role="none"><a href="#diferenciais" role="menuitem">Diferenciais</a></li>
+                <li role="none"><a href="#fragrancias" role="menuitem">Fragrâncias</a></li>
+                <li role="none"><a href="#contato" role="menuitem">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="hero" id="hero" aria-label="Apresentação da Casa Noir">
+            <div class="hero-sticky">
+                <video class="hero-video" muted playsinline preload="auto" aria-hidden="true">
+                    <source src="hero-casa-noir.mp4" type="video/mp4">
+                </video>
+                <div class="hero-fallback" aria-hidden="true">
+                    <div class="hero-fallback-pattern"></div>
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">Fragrâncias que<br>transformam ambientes</h1>
+                    <p class="hero-subtitle">Elegância percebida em cada detalhe</p>
+                    <a href="#produtos" class="cta-button">Descubra a essência</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand" id="marca" aria-label="Sobre a marca">
+            <div class="container">
+                <div class="brand-content">
+                    <span class="section-label">A Marca</span>
+                    <h2 class="section-title">A essência da Casa Noir</h2>
+                    <p class="brand-text">
+                        A Casa Noir nasceu da paixão por criar experiências sensoriais únicas. 
+                        Cada fragrância é cuidadosamente desenvolvida para transformar ambientes, 
+                        evocar emoções e criar memórias inesquecíveis.
+                    </p>
+                    <p class="brand-text">
+                        Nosso compromisso é com a qualidade e a sofisticação, utilizando ingredientes 
+                        selecionados e processos artesanais que garantem a excelência de cada produto.
+                    </p>
+                </div>
+                <div class="brand-values">
+                    <div class="value-item">
+                        <div class="value-icon">✦</div>
+                        <h3>Qualidade</h3>
+                        <p>Ingredientes selecionados e processos rigorosos</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">✦</div>
+                        <h3>Sofisticação</h3>
+                        <p>Design elegante e acabamento premium</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">✦</div>
+                        <h3>Experiência</h3>
+                        <p>Sensorialidade em cada detalhe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="produtos" aria-label="Catálogo de produtos">
+            <div class="container">
+                <span class="section-label">Produtos</span>
+                <h2 class="section-title">Nossa Coleção</h2>
+                
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits" id="diferenciais" aria-label="Diferenciais">
+            <div class="container">
+                <span class="section-label">Diferenciais</span>
+                <h2 class="section-title">Por que escolher a Casa Noir?</h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4L29.5 15.5L42 17.5L33 26L35.5 39L24 33L12.5 39L15 26L6 17.5L18.5 15.5L24 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Fragrâncias Exclusivas</h3>
+                        <p>Cada aroma é único e desenvolvido com ingredientes premium selecionados</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 44C24 44 40 32 40 20V10L24 4L8 10V20C8 32 24 44 24 44Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Design Premium</h3>
+                        <p>Embalagens elegantes que valorizam a decoração do seu ambiente</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 44C24 44 4 32 4 18C4 10 10 4 18 4C22 4 24 6 24 6C24 6 26 4 30 4C38 4 44 10 44 18C44 32 24 44 24 44Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Duração Prolongada</h3>
+                        <p>Fragrâncias que permanecem por horas transformando seu ambiente</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 24C4 24 12 16 24 16C36 16 44 24 44 24C44 24 36 32 24 32C12 32 4 24 4 24Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Personalização</h3>
+                        <p>Refis e acessórios para criar sua experiência personalizada</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sensory" id="fragrancias" aria-label="Fragrâncias">
+            <div class="sensory-bg"></div>
+            <div class="container">
+                <span class="section-label section-label--light">Fragrâncias</span>
+                <h2 class="section-title section-title--light">Uma jornada sensorial</h2>
+                <p class="sensory-intro">
+                    Cada fragrância da Casa Noir é uma experiência única que desperta os sentidos 
+                    e transforma qualquer ambiente em um refúgio de elegância e conforto.
+                </p>
+                
+                <div class="fragrance-notes">
+                    <div class="fragrance-note">
+                        <h3>Blanc</h3>
+                        <p>Chá branco, flor de limão e margaridas. Uma fragrância cítrica refrescante que traz leveza e harmonia.</p>
+                    </div>
+                    <div class="fragrance-note">
+                        <h3>L'or</h3>
+                        <p>Mistura cítrica e amadeirada intensa. Um aroma firme, marcante, vivo e envolvente.</p>
+                    </div>
+                    <div class="fragrance-note">
+                        <h3>Rose</h3>
+                        <p>Rosas perfumadas em harmonia com jasmim branco e gardênias. Floral bem marcante.</p>
+                    </div>
+                    <div class="fragrance-note">
+                        <h3>Vanille</h3>
+                        <p>Baunilha, rosas vermelhas e flor de laranjeira. Suave e aconchegante.</p>
+                    </div>
+                    <div class="fragrance-note">
+                        <h3>Bleu</h3>
+                        <p>Fresco, levemente cítrico e aromático. Ambreta, sal marinho e toranja.</p>
+                    </div>
+                    <div class="fragrance-note">
+                        <h3>Le Vert</h3>
+                        <p>Cítrico com cheiro campestre. Conforto, frescor e harmonia ao ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="contato" aria-label="Chamada para ação">
+            <div class="container">
+                <h2 class="cta-title">Descubra a essência da Casa Noir</h2>
+                <p class="cta-text">Transforme seu ambiente com fragrâncias que contam histórias</p>
+                <a href="https://wa.me/558585962496" class="cta-button cta-button--large" target="_blank" rel="noopener">
+                    Fale Conosco pelo WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Casa Noir</span>
+                    <p class="footer-tagline">Fragrâncias Especiais</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#marca">A Marca</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#fragrancias">Fragrâncias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p>WhatsApp: (85) 8596-2496</p>
+                    <a href="https://wa.me/558585962496" class="footer-whatsapp" target="_blank" rel="noopener">
+                        Enviar mensagem
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Casa Noir. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
