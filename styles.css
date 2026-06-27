@@ -251,8 +251,9 @@ a:hover { color: var(--color-gold); }
 .hero-content {
     position: relative;
     z-index: 10;
-    text-align: center;
+    text-align: left;
     padding: var(--spacing-md);
+    padding-left: clamp(var(--spacing-md), 8vw, var(--spacing-xl));
     max-width: 800px;
 }
 
